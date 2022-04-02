@@ -11,11 +11,11 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, 400);
   background(255);
 
   // message = ' Happy Spring Nicole '
-  message = 'Happy Spring Nicole'
+  let message = 'HappySpringNicole'
 
   var points = font.textToPoints(message, 100, 200, 192, {
     sampleFactor: 0.25
