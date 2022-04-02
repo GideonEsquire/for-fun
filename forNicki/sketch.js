@@ -8,29 +8,31 @@ var vehicles = [];
 
 function preload() {
   font = loadFont('AvenirNextLTPro-Demi.otf');
-  data = loadJSON("db.json");
 }
 
 function setup() {
-  createCanvas(windowWidth, 400);
+  createCanvas(windowWidth, windowHeight);
   background(255);
 
-  // with the activity variable I want to grab a random activity from data
-  activity = 'Skyler'
+  let words = ['Happy', 'Spring', 'Nicole']
 
-  var points = font.textToPoints(activity, 100, 200, 192, {
-    sampleFactor: 0.25
-  });
+  for (let i = 0; i < words.length; i++) {
+    
+    var points = font.textToPoints(words[i], windowWidth/2-100, windowHeight/2 + i*100 - 100, 72, {
+      sampleFactor: 0.25
+    });
 
-  for (var i = 0; i < points.length; i++) {
-    var pt = points[i];
-    var vehicle = new Vehicle(pt.x, pt.y);
-    vehicles.push(vehicle);
-    // stroke(255);
-    // strokeWeight(8);
-    // point(pt.x, pt.y);
+    for (let j = 0; j < points.length; j++) {
+      var pt = points[j];
+      var vehicle = new Vehicle(pt.x, pt.y);
+      vehicles.push(vehicle);
+      // stroke(255);
+      // strokeWeight(8);
+      // point(pt.x, pt.y);
+    }
   }
 }
+
 
 function draw() {
   background(255);
