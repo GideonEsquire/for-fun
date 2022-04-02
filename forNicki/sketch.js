@@ -4,13 +4,16 @@
 // Video: https://www.youtube.com/watch?v=4hA7G3gup-4
 
 var font;
+var music;
 var vehicles = [];
 
 function preload() {
   font = loadFont('AvenirNextLTPro-Demi.otf');
+  music = loadSound('assets/bensound-tenderness.mp3');
 }
 
 function setup() {
+  music.play()
   createCanvas(windowWidth, windowHeight);
   background(255);
 
