@@ -2,9 +2,9 @@ function Particle(x, y) {
   // rand1 = Math.random() * 100
   // rand2 = Math.random() * 5000
   // rand3 = Math.random() * 3000
-  rand1 = 50
-  rand2 = 50
-  rand3 = 2
+  rand1 = 500
+  rand2 = 500
+  rand3 = 15
   this.pos = createVector(x, y);
   this.prev = createVector(x, y);
   this.vel = createVector();
