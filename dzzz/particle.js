@@ -1,21 +1,24 @@
 function Particle(x, y) {
+  // rand1 = Math.random() * 100
+  // rand2 = Math.random() * 5000
+  // rand3 = Math.random() * 3000
+  rand1 = 50
+  rand2 = 50
+  rand3 = 2
   this.pos = createVector(x, y);
   this.prev = createVector(x, y);
   this.vel = createVector();
   this.acc = createVector();
-  rand1 = Math.random() * 100
-  rand2 = Math.random() * 5000
-  rand3 = Math.random() * 3000
 
   this.update = function() {
     this.pos.add(this.vel);
     this.vel.add(this.acc);
-    this.vel.mult(.95);
+    this.vel.mult(.999);
     this.acc.mult(0);
   }
 
   this.show = function() {
-    stroke(0, 0, 200, 10);
+    stroke(0, 0, 255, 95);
     strokeWeight(1);
     line(this.pos.x, this.pos.y, this.prev.x, this.prev.y);
     this.prev.x = this.pos.x;
