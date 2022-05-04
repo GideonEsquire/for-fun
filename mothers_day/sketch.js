@@ -30,7 +30,7 @@ function draw() {
   }
 }
 
-function mouseClicked() {
+function touchStarted() {
   hearts.push(new Heart(heart_img, mouseX-12, mouseY-12, random(0, 100), random(20, 35)));
   console.log("click");
   sound.play();
