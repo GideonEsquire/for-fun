@@ -28,6 +28,7 @@
 body {
   box-sizing: border-box;
   font-family: 'Satisfy', cursive;
+  font-size: 2rem;
   background-image: url('assets/bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -103,14 +104,9 @@ body {
   }
 }
 
-
-
-
-
-
 h1{
   /* color: #484848; */
-  font-size: 50px;
+  font-size: 5rem;
   /* font-weight: bold; */
   /* font-family: monospace; */
   /* letter-spacing: 7px; */
