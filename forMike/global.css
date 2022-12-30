@@ -38,11 +38,20 @@ canvas {
 
 h1 {
   font-size: 5rem;
+  margin: -1rem;
   transform: rotate(-10deg);
 }
 
 h1 span {
   animation: anim 0.595s infinite alternate;
+}
+
+.big {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
 }
 
 @keyframes anim {
