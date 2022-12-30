@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+  color: #d8dee8;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Satisfy', cursive;
+  font-size: 2rem;
+}
+
+canvas {
+  height: 100vh;
+  background: #462483;
+  /* dotColor: '#662483', */
+  /* background: radial-gradient(circle, #562483 25%, #462483 100%); */
+}
+
+.container {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 5rem;
+  transform: rotate(-10deg);
+}
+
+h1 span {
+  animation: anim 0.595s infinite alternate;
+}
+
+@keyframes anim {
+  to {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  }
+}
